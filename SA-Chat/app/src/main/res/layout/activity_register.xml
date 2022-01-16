@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <ImageButton
+        android:id="@+id/registerback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        android:padding="16dp"
+        android:background="@drawable/usercard_button_design" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp"
+        android:background="@drawable/koselikivrik"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni Hesap Oluştur ve Sohbete Başla"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaz"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="16dp"
+            app:met_floatingLabel="normal"
+            android:textColor="@color/beyaz"
+            android:hint="Kullanıcı Adı"
+            app:met_baseColor="@color/beyaz"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp"
+            app:met_floatingLabel="normal"
+            android:hint="E-Posta"
+            android:textColor="@color/beyaz"
+            app:met_baseColor="@color/beyaz"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            app:met_floatingLabel="normal"
+            app:met_baseColor="@color/beyaz"
+            android:textColor="@color/beyaz"
+            android:hint="Şifre"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:id="@+id/btn_register"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SA-Chat · DNC Software"
+        android:textColor="@color/beyaz"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

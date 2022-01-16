@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/saydammaviton"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profil"
+                        android:textColor="@color/griton"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/profil_foto_cember"
+                        android:layout_marginTop="16dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_default_userimage"
+                            android:layout_margin="8dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_editpp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/cember"
+                            android:padding="3dp"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@android:color/transparent"
+                        android:text="username"
+                        android:textColor="@color/beyaz"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/userdurum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@android:color/transparent"
+                        android:text="username"
+                        android:textColor="@color/beyaz"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/saydammaviton"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ayarlar"
+                        android:textColor="@color/griton"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editting_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/transparentcornerblue"
+                        android:hint="Kullanıcı Adı"
+                        android:padding="16dp"
+                        android:textColor="@color/beyaz"
+                        android:textColorHint="@color/griton" />
+
+                    <EditText
+                        android:id="@+id/editting_userdurum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/transparentcornerblue"
+                        android:hint="Durum"
+                        android:padding="16dp"
+                        android:textColor="@color/beyaz"
+                        android:textColorHint="@color/griton" />
+
+                    <Button
+                        android:id="@+id/save_changes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:padding="16dp"
+                        android:text="Değişiklikleri Kaydet"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                    <TextView
+                        android:id="@+id/editting_ref_adres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/transparentcornerblue"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/beyaz"
+                        android:textColorHint="@color/griton" />
+
+                    <Button
+                        android:id="@+id/ref_adres_paylas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:padding="16dp"
+                        android:text="Referans Adresimi Paylaş"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                    <Button
+                        android:id="@+id/change_password_f_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:padding="16dp"
+                        android:text="Şifre Değiştir"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                    <Button
+                        android:id="@+id/reset_email_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:padding="16dp"
+                        android:text="E-Posta Adresini Değiştir"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                    <Button
+                        android:id="@+id/dogrulama_gonder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:padding="16dp"
+                        android:visibility="gone"
+                        android:text="Doğrulama E-Postası Gönder"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/saydammaviton"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yardım"
+                        android:textColor="@color/griton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/profile_yardim_hata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:drawableStart="@drawable/ic_help"
+                        android:drawableLeft="@drawable/ic_help"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:text="Yardım"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                    <Button
+                        android:id="@+id/bizeulasin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/auth_button_design"
+                        android:drawableStart="@drawable/ic_bizeulas"
+                        android:drawableLeft="@drawable/ic_bizeulas"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:text="Bize Ulaşın"
+                        android:textAllCaps="false"
+                        android:textColor="@color/beyaz" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

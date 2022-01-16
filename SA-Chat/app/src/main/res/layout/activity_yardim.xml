@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".Activities.YardimActivity">
+
+    <ImageButton
+        android:id="@+id/yardimactivityback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        android:padding="16dp"
+        android:background="@drawable/usercard_button_design" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="1 - Kayıt olduktan sonra arkadaşlarınızdan referans adresi talep ediniz."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="2 - Bir kullanıcıyı arama yolu ile bulduktan sonra kullanıcının üzerine tıklayınız ve sohbet ekranına geçiniz."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="3 - Burada dilediğinizce sohbet edebilirsiniz."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="4 - Kullanım ihlali (rahatsızlık, spam, cinsel içerik, siyasi kullanım vb.) yapan kullanıcıların hesapları kalıcı süre ile kapatılacaktır."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="5 - SA - Chat dilediği zaman hizmeti durdurma hakkına sahiptir."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="6 - SA - Chat veri güvenliği konusunda garanti veremez."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:text="7 - Bilgilerinizin zararlı yazılımlar ile ele geçirilmesi ve sunuculara kötü niyetli saldırılar söz konusu olduğunda SA - Chat sorumluluk kabul etmez."/>
+
+    </LinearLayout>
+
+</LinearLayout>
